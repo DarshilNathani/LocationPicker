@@ -117,10 +117,19 @@ open class LocationItem: NSObject, NSCoding {
         self.mapItem.name = locationName
     }
     
+//    open override func isEqual(_ object: Any?) -> Bool {
+//        guard let object = object as AnyObject? else { return false }
+//        return object.hash == hash
+//    }    
+    
+    // Added this in Fork
     open override func isEqual(_ object: Any?) -> Bool {
-        guard let object = object as AnyObject? else { return false }
-        return object.hash == hash
-    }    
+        guard let object = object else { return false }
+        
+        guard let otherLocationItem = object as? LocationItem else { return false }
+        
+        return otherLocationItem.hashValue == self.hashValue
+    }
     
     public required convenience init(coder aDecoder: NSCoder) {
         let latitude = aDecoder.decodeDouble(forKey: "latitude")
