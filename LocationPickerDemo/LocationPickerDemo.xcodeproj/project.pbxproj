@@ -129,6 +129,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -301,7 +302,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LocationPickerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JeromeTan.LocationPickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,7 +321,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LocationPickerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JeromeTan.LocationPickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

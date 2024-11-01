@@ -1,18 +1,22 @@
 Pod::Spec.new do |s|
-  s.name             = "LocationPickerViewController"
-  s.version          = "3.4"
-  s.summary          = "A ready for use and fully customizable location picker for your app."
+  # Pod Information
+  s.name             = 'LocationPickerViewController'
+  s.version          = '3.4.0'  # Consider using semantic versioning
+  s.summary          = 'A ready-to-use and fully customizable location picker for your app.'
+  
+  # Homepage and License
+  s.homepage         = 'https://github.com/zhuorantan/LocationPicker'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Jerome Tan' => 'DevJerome@iCloud.com' }
+  
+  # Source Control
+  s.source           = { :git => 'https://github.com/DarshilNathani/LocationPicker.git', :branch => "master" }
 
-  s.homepage         = "https://github.com/JeromeTan1997/LocationPicker"
-  s.screenshots      = "https://raw.githubusercontent.com/JeromeTan1997/LocationPicker/master/Screenshots/locationpicker.gif"
-  s.license          = 'MIT'
-  s.author           = { "Jerome Tan" => "DevJerome@iCloud.com" }
-  s.source           = { :git => "https://github.com/JeromeTan1997/LocationPicker.git", :tag => s.version.to_s }
+  # Platform and Compatibility
+  s.platform         = :ios, '12.0'
+  s.requires_arc     = true
+  s.swift_version    = '4.2'
 
-  s.platform     = :ios, '8.0'
-  s.requires_arc = true
-  s.swift_version = '4.2'
-
-  s.source_files = 'LocationPicker/*.swift'
-
+  # Source Files
+  s.source_files      = 'LocationPicker/*.swift'
 end
